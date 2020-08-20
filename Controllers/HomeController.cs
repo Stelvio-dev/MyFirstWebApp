@@ -6,7 +6,7 @@ namespace Udemy
     {
         public IActionResult Index() 
         {
-            return Content ("Sono nella Home Index");
+            return  View();
         }
     }
 }

@@ -1,0 +1,17 @@
+{
+    "emmet.preferences": {
+
+    },
+    "razor.disabled": false,
+    "csharp.semanticHighlighting.enabled": true,
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+    "emmet.extensionsPath": "",
+    "emmet.includeLanguages": {
+        "razor":"html",
+        "aspnetcorerazor":"html"
+    }
+    
+}
