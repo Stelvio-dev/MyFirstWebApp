@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Udemy.Models.Services.Application;
 
 namespace Udemy
 {
@@ -17,6 +18,9 @@ namespace Udemy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddTransient<ICourseService, CourseServices>();
+            //services.AddScoped<ICourseService, CourseServices>();
+            //services.AddSingleton<ICourseService, CourseServices>();
            
         }
 
